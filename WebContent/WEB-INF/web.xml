@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>LoginDemo</display-name>
+	<servlet>
+		<servlet-name>LogIn</servlet-name>
+		<servlet-class>com.bridgelabz.usermanagement.controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogIn</servlet-name>
+		<url-pattern>/LoginModule</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.bridgelabz.usermanagement.controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/RegisterationModule</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogOut</servlet-name>
+		<servlet-class>com.bridgelabz.usermanagement.controller.LogOutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogOut</servlet-name>
+		<url-pattern>/LogoutPage</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>forgot</servlet-name>
+		<servlet-class>com.bridgelabz.usermanagement.controller.ForgotPasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>forgot</servlet-name>
+		<url-pattern>/forgotPassword</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Reset</servlet-name>
+		<servlet-class>com.bridgelabz.usermanagement.controller.NewPasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Reset</servlet-name>
+		<url-pattern>/resetPassword</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
